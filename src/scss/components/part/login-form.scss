@@ -1,0 +1,149 @@
+.lform {
+  .btn {
+    display: block;
+    width: 100%;
+    &-login {
+      margin-bottom: 12px;
+    }
+  }
+  .link {
+    font-size: 12px;
+    line-height: 15px;
+    color: #989ba3;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__head {
+    margin-bottom: 32px;
+    .title {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 13px;
+    }
+    .info {
+      color: #8d929f;
+    }
+  }
+  &__inp {
+    margin-bottom: 24px;
+    position: relative;
+    &.error {
+        input {
+            border-color: red;
+        }
+        label.error {
+            position: absolute;
+        }
+    }
+    label {
+      display: block;
+      margin-bottom: 4px;
+    }
+    input {
+      padding: 9px 12px;
+      border: 1px solid #b1bacb;
+      border-radius: 8px;
+      width: 100%;
+      &[type="text"] {
+        + .view_passw {
+          svg {
+            fill: #111111;
+          }
+        }
+      }
+    }
+    &-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .view_passw {
+      position: absolute;
+      bottom: 9px;
+      right: 12px;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+      svg {
+        width: 17px;
+        height: 17px;
+        fill: #b8c0cf;
+      }
+    }
+  }
+  &__check {
+    background: #e5e5e5;
+    border-radius: 33px;
+    padding: 4px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    input {
+      &[name="type-sign"] {
+        display: none;
+        &:checked {
+          + label {
+            background: #ffffff;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+    label {
+      flex-basis: 50%;
+      text-align: center;
+      padding: 4.5px 10px;
+      cursor: pointer;
+    }
+  }
+  &__checkbox {
+      margin-bottom: 21px;
+    label {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 11px;
+      cursor: pointer;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      &:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      input:checked ~ .checkmark {
+        background: #00adef;
+        border-color: #00adef;
+        svg {
+          display: block;
+        }
+      }
+    }
+
+    .checkmark {
+      height: 20px;
+      width: 20px;
+      min-width: 20px;
+      background-color: #eee;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #636366;
+      margin-right: 10px;
+      svg {
+        display: none;
+        width: 12px;
+        height: 12px;
+        fill: #fff;
+      }
+    }
+  }
+}

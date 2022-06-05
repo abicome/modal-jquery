@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  @include('partials/part/head.html', {
+    'title': 'Home Page',
+    'description': 'Description main'
+  })
+
+  <body>
+    <div class="wrapper">
+      
+      <main class="main">
+        <button class="btn btn-popup" data-popup-link="popup-1">Login</button>
+      </main>
+      @include('partials/modal.html')
+    </div>
+    <!-- @include('html/example.html') example include -->
+  </body>
+</html>

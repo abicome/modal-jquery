@@ -1,0 +1,117 @@
+<div class="popup popup-1">
+  <div class="popup__wrapper">
+    <div class="popup__bg"></div>
+    <div class="popup__inner">
+      <span class="popup__close"></span>
+      <div class="lform form-login">
+        <div class="lform__head">
+          <div class="title align-center">Login</div>
+          <div class="info align-center">
+            Welcome to Woxparts, please login <br />
+            if you have registration
+          </div>
+        </div>
+        <div class="lform__body">
+          <form name="login">
+            <div class="lform__inp">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="lform__inp">
+              <div class="lform__inp-group">
+                <label>Password</label
+                ><a href="#" class="link">Forgot your password?</a>
+              </div>
+              <input
+                type="password"
+                name="password"
+                placeholder="·····"
+                class="password-input"
+              />
+              <span class="view_passw">
+                <svg class="icon icon-icon">
+                  <use xlink:href="img/sprite.svg#icon"></use>
+                </svg>
+              </span>
+            </div>
+            <button class="btn btn-login">Login</button>
+          </form>
+          <button class="btn btn-alt btn-signup">Sign Up</button>
+        </div>
+      </div>
+      <div class="lform form-sign" style="display: none;">
+        <div class="lform__head">
+          <div class="title align-center">Sign Up</div>
+          <div class="info align-center">Welcome to Woxparts</div>
+        </div>
+        <div class="lform__check">
+          <input type="radio" name="type-sign" id="check-personal" checked />
+          <label for="check-personal">Personal</label>
+          <input type="radio" name="type-sign" id="check-company" />
+          <label for="check-company">Company</label>
+        </div>
+        <div class="lform__body">
+          <form name="signup">
+            <div class="lform__inp">
+              <label>First Name</label>
+              <input type="text" name="firstname" placeholder="First Name" />
+            </div>
+            <div class="lform__inp">
+              <label>Last Name</label>
+              <input type="text" name="lastname" placeholder="Last Name" />
+            </div>
+            <div class="lform__dop" style="display: none;">
+              <div class="lform__inp">
+                <label>Company Name</label>
+                <input type="text" name="companyname" placeholder="Company Name" />
+              </div>
+              <div class="lform__inp">
+                <label>Registration Nr</label>
+                <input type="text" name="reg-nr" placeholder="Registration Nr" />
+              </div>
+            </div>
+            <div class="lform__inp">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="lform__inp">
+              <label>Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="·····"
+                class="password-input"
+              />
+              <span class="view_passw">
+                <svg class="icon icon-icon">
+                  <use xlink:href="img/sprite.svg#icon"></use>
+                </svg>
+              </span>
+            </div>
+            <div class="lform__checkbox">
+              <label>
+                  <input type="checkbox" name="news" checked />
+                <span class="checkmark">
+                  <svg class="icon icon-icon">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                I want to receive news/updates
+              </label>
+              <label>
+                <input type="checkbox" name="policy" />
+                <span class="checkmark">
+                  <svg class="icon icon-icon">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                I agree with the Privacy Policy and Terms of Use
+              </label>
+            </div>
+            <button class="btn">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
